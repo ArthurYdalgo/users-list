@@ -151,8 +151,8 @@ __webpack_require__.r(__webpack_exports__);
     items.add('users-list', flarum_components_AdminLinkButton__WEBPACK_IMPORTED_MODULE_3___default.a.component({
       href: flarum_app__WEBPACK_IMPORTED_MODULE_0___default.a.route('usersList'),
       icon: 'fas fa-users',
-      children: flarum_app__WEBPACK_IMPORTED_MODULE_0___default.a.translator.trans('flagrow-users-list.admin.nav.users_button'),
-      description: flarum_app__WEBPACK_IMPORTED_MODULE_0___default.a.translator.trans('flagrow-users-list.admin.nav.users_text')
+      children: flarum_app__WEBPACK_IMPORTED_MODULE_0___default.a.translator.trans('veroz1-users-list.admin.nav.users_button'),
+      description: flarum_app__WEBPACK_IMPORTED_MODULE_0___default.a.translator.trans('veroz1-users-list.admin.nav.users_text')
     }));
   });
 });
@@ -202,7 +202,7 @@ function (_Modal) {
     this.loading = false;
     this.user = this.props.user;
     this.forAll = this.props.forAll;
-    this.subject = m.prop(flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('flagrow-users-list.admin.modal_mail.default_subject')[0]);
+    this.subject = m.prop(flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('veroz1-users-list.admin.modal_mail.default_subject')[0]);
     this.messageText = m.prop('');
 
     if (!this.forAll) {
@@ -218,10 +218,10 @@ function (_Modal) {
   };
 
   _proto.title = function title() {
-    var title = flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('flagrow-users-list.admin.modal_mail.title_text');
+    var title = flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('veroz1-users-list.admin.modal_mail.title_text');
 
     if (this.forAll) {
-      title += ' ' + flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('flagrow-users-list.admin.modal_mail.title_all_text');
+      title += ' ' + flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('veroz1-users-list.admin.modal_mail.title_all_text');
     } else {
       title += ' ' + this.user.username() + ' (' + this.email() + ')';
     }
@@ -237,20 +237,20 @@ function (_Modal) {
       onsubmit: this.onsubmit.bind(this)
     }, !this.forAll && m("div", {
       className: "Form-group"
-    }, m("label", null, flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('flagrow-users-list.admin.modal_mail.email_label')), m("input", {
+    }, m("label", null, flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('veroz1-users-list.admin.modal_mail.email_label')), m("input", {
       type: "text",
       className: "FormControl",
       value: this.email(),
       oninput: this.oninputEmail.bind(this)
     })), m("div", {
       className: "Form-group"
-    }, m("label", null, flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('flagrow-users-list.admin.modal_mail.subject_label')), m("input", {
+    }, m("label", null, flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('veroz1-users-list.admin.modal_mail.subject_label')), m("input", {
       type: "text",
       className: "FormControl",
       bidi: this.subject
     })), m("div", {
       className: "Form-group"
-    }, m("label", null, flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('flagrow-users-list.admin.modal_mail.message_label')), m("textarea", {
+    }, m("label", null, flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('veroz1-users-list.admin.modal_mail.message_label')), m("textarea", {
       rows: "10",
       className: "FormControl",
       style: "resize: vertical; width: 100%;",
@@ -259,7 +259,7 @@ function (_Modal) {
       type: 'submit',
       className: 'Button Button--primary EditContactModal-save',
       loading: this.loading,
-      children: flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('flagrow-users-list.admin.modal_mail.submit_button'),
+      children: flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('veroz1-users-list.admin.modal_mail.submit_button'),
       disabled: this.submitDisabled
     })));
   };
@@ -363,7 +363,7 @@ function UserItem(user) {
     className: 'UsersListItem-name'
   }, [user.username()]), m('span', {
     className: 'UserCard-lastSeen' + (online ? ' online' : '')
-  }, [online ? [flarum_helpers_icon__WEBPACK_IMPORTED_MODULE_6___default()('fas fa-circle'), ' ', flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('flagrow-users-list.admin.page.online_text')] : [flarum_helpers_icon__WEBPACK_IMPORTED_MODULE_6___default()('far fa-clock'), ' ', flarum_helpers_humanTime__WEBPACK_IMPORTED_MODULE_5___default()(user.lastSeenAt())]]), m('span', {
+  }, [online ? [flarum_helpers_icon__WEBPACK_IMPORTED_MODULE_6___default()('fas fa-circle'), ' ', flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('veroz1-users-list.admin.page.online_text')] : [flarum_helpers_icon__WEBPACK_IMPORTED_MODULE_6___default()('far fa-clock'), ' ', flarum_helpers_humanTime__WEBPACK_IMPORTED_MODULE_5___default()(user.lastSeenAt())]]), m('span', {
     className: 'UsersListItem-comments'
   }, [flarum_helpers_icon__WEBPACK_IMPORTED_MODULE_6___default()('comment-o'), user.commentCount()]), m('span', {
     className: 'UsersListItem-discussions'
@@ -410,7 +410,7 @@ function (_Page) {
       loading = flarum_components_LoadingIndicator__WEBPACK_IMPORTED_MODULE_4___default.a.component();
     } else if (this.moreResults) {
       loading = flarum_components_Button__WEBPACK_IMPORTED_MODULE_3___default.a.component({
-        children: flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('flagrow-users-list.admin.page.load_more_button'),
+        children: flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('veroz1-users-list.admin.page.load_more_button'),
         className: 'Button',
         onclick: this.loadMore.bind(this)
       });
@@ -422,10 +422,10 @@ function (_Page) {
       className: "UsersListPage-header"
     }, m("div", {
       className: "container"
-    }, m("p", null, flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('flagrow-users-list.admin.page.about_text')), flarum_components_Button__WEBPACK_IMPORTED_MODULE_3___default.a.component({
+    }, m("p", null, flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('veroz1-users-list.admin.page.about_text')), flarum_components_Button__WEBPACK_IMPORTED_MODULE_3___default.a.component({
       className: 'Button Button--primary',
       icon: 'plus',
-      children: flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('flagrow-users-list.admin.page.mail_all_button'),
+      children: flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('veroz1-users-list.admin.page.mail_all_button'),
       onclick: function onclick() {
         return flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.modal.show(new _EmailUserModal__WEBPACK_IMPORTED_MODULE_7__["default"]({
           forAll: true
@@ -437,7 +437,7 @@ function (_Page) {
       className: "container"
     }, m("div", {
       className: "UsersListItems"
-    }, m("label", null, flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('flagrow-users-list.admin.page.list_title')), m("ol", {
+    }, m("label", null, flarum_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans('veroz1-users-list.admin.page.list_title')), m("ol", {
       className: "UsersList"
     }, this.users.map(UserItem)), m("div", {
       className: "UsersListPage-loadMore"
@@ -507,8 +507,8 @@ function (_Page) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _addUsersListPane__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./addUsersListPane */ "./src/admin/addUsersListPane.js");
 
-app.initializers.add('flagrow-users-list', function () {
-  app.extensionSettings['flagrow-users-list'] = function () {
+app.initializers.add('veroz1-users-list', function () {
+  app.extensionSettings['veroz1-users-list'] = function () {
     return m.route(app.route('usersList'));
   };
 
