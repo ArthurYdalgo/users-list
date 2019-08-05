@@ -9,5 +9,5 @@ return [
         ->css(__DIR__ . '/resources/less/admin.less'),
     new Extend\Locales(__DIR__ . '/resources/locale'),
     (new Extend\Routes('api'))
-        ->post('/admin-mail', 'flagrow.users-list.create-mail', Api\Controller\SendAdminEmailController::class),
+        ->post('/admin-mail', 'veroz1.users-list.create-mail', Api\Controller\SendAdminEmailController::class),
 ];
