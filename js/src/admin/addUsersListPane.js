@@ -11,8 +11,8 @@ export default function() {
         items.add('users-list', AdminLinkButton.component({
             href: app.route('usersList'),
             icon: 'fas fa-users',
-            children: app.translator.trans('flagrow-users-list.admin.nav.users_button'),
-            description: app.translator.trans('flagrow-users-list.admin.nav.users_text')
+            children: app.translator.trans('veroz1-users-list.admin.nav.users_button'),
+            description: app.translator.trans('veroz1-users-list.admin.nav.users_text')
         }));
     });
 }
