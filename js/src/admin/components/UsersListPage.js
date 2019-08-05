@@ -19,7 +19,7 @@ function UserItem(user) {
                 ]),
                 m('span', {className: 'UserCard-lastSeen' + (online ? ' online' : '')}, [
                     online
-                        ? [icon('fas fa-circle'), ' ', app.translator.trans('flagrow-users-list.admin.page.online_text')]
+                        ? [icon('fas fa-circle'), ' ', app.translator.trans('veroz1-users-list.admin.page.online_text')]
                         : [icon('far fa-clock'), ' ', humanTime(user.lastSeenAt())]
                 ]),
                 m('span', {className: 'UsersListItem-comments'}, [
@@ -67,7 +67,7 @@ export default class UsersListPage extends Page {
             loading = LoadingIndicator.component();
         } else if (this.moreResults) {
             loading = Button.component({
-                children: app.translator.trans('flagrow-users-list.admin.page.load_more_button'),
+                children: app.translator.trans('veroz1-users-list.admin.page.load_more_button'),
                 className: 'Button',
                 onclick: this.loadMore.bind(this)
             });
@@ -76,11 +76,11 @@ export default class UsersListPage extends Page {
         return <div className="UsersListPage">
             <div className="UsersListPage-header">
                 <div className="container">
-                    <p>{app.translator.trans('flagrow-users-list.admin.page.about_text')}</p>
+                    <p>{app.translator.trans('veroz1-users-list.admin.page.about_text')}</p>
                     {Button.component({
                         className: 'Button Button--primary',
                         icon: 'plus',
-                        children: app.translator.trans('flagrow-users-list.admin.page.mail_all_button'),
+                        children: app.translator.trans('veroz1-users-list.admin.page.mail_all_button'),
                         onclick: () => app.modal.show(new EmailUserModal({ forAll: true }))
                     })}
                 </div>
@@ -88,7 +88,7 @@ export default class UsersListPage extends Page {
             <div className="UsersListPage-list">
                 <div className="container">
                     <div className="UsersListItems">
-                        <label>{app.translator.trans('flagrow-users-list.admin.page.list_title')}</label>
+                        <label>{app.translator.trans('veroz1-users-list.admin.page.list_title')}</label>
                         <ol className="UsersList">{this.users.map(UserItem)}</ol>
                         <div className="UsersListPage-loadMore">
                             {loading}
