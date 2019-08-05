@@ -81,7 +81,7 @@ class SendAdminEmailController implements RequestHandlerInterface
     {
         $this->mailer->send(['raw' => $text], [], function (Message $message) use ($email, $subject) {
             $message->to($email);
-            $message->subject('[' . $this->settings->get('forum_title') . '] ' . ($subject !== '' ? $subject : $this->translator->trans('avatar4eg-users-list.email.default_subject')));
+            $message->subject('[' . $this->settings->get('forum_title') . '] ' . ($subject !== '' ? $subject : $this->translator->trans('veroz1-users-list.email.default_subject')));
         });
     }
 }
