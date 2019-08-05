@@ -1,6 +1,6 @@
 # Users list by ![Flagrow logo](https://avatars0.githubusercontent.com/u/16413865?v=3&s=20) [Flagrow](https://discuss.flarum.org/d/1832-flagrow-extension-developer-group), a project of [Gravure](https://gravure.io/)
 
-[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/flagrow/users-list/blob/master/LICENSE.md) [![Latest Stable Version](https://img.shields.io/packagist/v/flagrow/users-list.svg)](https://packagist.org/packages/flagrow/users-list) [![Total Downloads](https://img.shields.io/packagist/dt/flagrow/users-list.svg)](https://packagist.org/packages/flagrow/users-list) [![Donate](https://img.shields.io/badge/patreon-support-yellow.svg)](https://www.patreon.com/flagrow) [![Join our Discord server](https://discordapp.com/api/guilds/240489109041315840/embed.png)](https://flagrow.io/join-discord)
+[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/veroz1/users-list/blob/master/LICENSE.md) [![Latest Stable Version](https://img.shields.io/packagist/v/veroz1/users-list.svg)](https://packagist.org/packages/veroz1/users-list) [![Total Downloads](https://img.shields.io/packagist/dt/veroz1/users-list.svg)](https://packagist.org/packages/veroz1/users-list) [![Donate](https://img.shields.io/badge/patreon-support-yellow.svg)](https://www.patreon.com/flagrow) [![Join our Discord server](https://discordapp.com/api/guilds/240489109041315840/embed.png)](https://flagrow.io/join-discord)
 
 A [Flarum](http://flarum.org) extension that adds users list to admin panel.
 
@@ -14,13 +14,13 @@ A [Flarum](http://flarum.org) extension that adds users list to admin panel.
 Use [Bazaar](https://discuss.flarum.org/d/5151-flagrow-bazaar-the-extension-marketplace) or install manually:
 
 ```bash
-composer require flagrow/users-list
+composer require veroz1/users-list
 ```
 
 ## Updating
 
 ```bash
-composer update flagrow/users-list
+composer update veroz1/users-list
 php flarum cache:clear
 ```
 
