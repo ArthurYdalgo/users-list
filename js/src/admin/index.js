@@ -1,7 +1,7 @@
 import addUsersListPane from './addUsersListPane';
 
-app.initializers.add('flagrow-users-list', () => {
-    app.extensionSettings['flagrow-users-list'] = () => m.route(app.route('usersList'));
+app.initializers.add('veroz1-users-list', () => {
+    app.extensionSettings['veroz1-users-list'] = () => m.route(app.route('usersList'));
 
     addUsersListPane();
 });
